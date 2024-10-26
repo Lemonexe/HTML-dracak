@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1250">
+<meta name="generator" content="PSPad editor, www.pspad.com">
+<title></title>
+<script type="text/javascript">
+<!--
+
+function vepis(str){document.getElementById("plocha").innerHTML = str;}
+function barva(str){document.getElementById("plocha").style.background = str;}
+
+function dracak(){
+barva("red");
+vepis('Vyber rasu pro hru <br><input type="button" onclick="clovek()" value="človek"><br>'
++'<input type="button" onclick="elf()" value="elf"><br>'
++'<input type="button" onclick="delf()" value="Temný elf"><br>'
++'<input type="button" onclick="ork()" value="ork"><br>'
++'<input type="button" onclick="zloun()" value="Nemrtvý"><br>');
+
+}
+
+function clovek(){
+  barva("red");
+  vepis('Jsi na cestě.<input type="button" onclick="clovek2()" value="dopředu"><br>'
+  +'<input type="button" onclick="clovek3()" value="dozadu">');
+  
+}
+function elf(){
+  barva("red");
+  vepis('Jsi na stromě.Nevíš, kde ses tam vzal.Jdeš ke <input type="button" onclick="elf2()" value="kopci"><br>'
+  +'<input type="button" onclick="elf3()" value="řece">');
+  
+}
+function ork(){
+  barva("red");
+  vepis('Rodiče se nevrátily z lovu<input type="button" onclick="ork2()" value="nahoru na horu"><br>'
+  +'<input type="button" onclick="ork3()" value="dolů">');
+  
+}
+function delf(){
+  barva("red");
+  vepis('Jsi pod útesem<input type="button" onclick="delf2()" value="doprava kolem útesu">nebo<br>'
+  +'<input type="button" onclick="delf3()" value="doleva kolem útesu">');
+
+}
+function zloun(){
+  barva("red");
+  vepis('Jsi kostlivec v bažině.<input type="button" onclick="zloun2()" value="pryč z bažiny">nebo<br>'
+  +'<input type="button" onclick="zloun3()" value="do kotliny">');
+
+}
+//-->
+</script>
+</head>
+<body id="plocha">
+ Vítejte v HTML hře dračák.doufám, že si ji užijete<br>
+ Prosím, aby jste nepoužívali tlačítko zpět.<br>
+ <hr>
+ Výhrou této hry je zabít hadího krále, který <br>
+ žije daleko ve svém paláci.
+ <hr>
+ Prohrou je jakkoli zemřít.
+ <hr> <input type="button" onclick="dracak()" value="dál">
+</body>
+</html>
